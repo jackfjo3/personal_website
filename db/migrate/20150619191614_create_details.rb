@@ -5,6 +5,7 @@ class CreateDetails < ActiveRecord::Migration
     	t.integer :experience_id
     	t.integer :order
     	t.string :dtype
+    	t.references :experience
       t.timestamps null: true
     end
   end

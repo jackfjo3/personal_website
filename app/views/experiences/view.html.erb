@@ -1,0 +1,9 @@
+<div class="experiences">
+    <% @experiences.each do |experiences| %>
+      <div class="company"><%= experiences.company %></div>
+      <div class="dates"><%= experiences.start_date %> -  <%= experiences.end_date %></div>
+      <div class="title"><%= experiences.title </div>
+      <%= render partial: "details/show", locals: {experiences: @experiences} %>
+    <% end %>
+  </div>
+</div>

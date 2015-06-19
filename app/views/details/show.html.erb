@@ -1,0 +1,11 @@
+<div class="details">
+	<ul>
+		<% @details.each do |details| %>
+			<% if details.dtype == "work" %>
+				<li><%= details.text %></li>
+			<% else %>
+				<p><%= details.text %></p>
+			<% end %>
+		<% end %>
+	</ul>
+</div>
