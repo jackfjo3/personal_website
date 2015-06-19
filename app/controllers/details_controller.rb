@@ -1,6 +1,6 @@
 class DetailsController < ApplicationController
 	def show 
 	    @experience = Experience.find(params[:id]) 
-	    @details = Detail.all
+	    @details = @experience.details
 	end
 end
