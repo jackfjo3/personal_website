@@ -1,7 +1,7 @@
 class ExperiencesController < ApplicationController
 
 	def view
-		@experience = Experiences.all
+		@experiences = Experience.all
 	end
 
 end
