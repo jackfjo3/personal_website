@@ -3,7 +3,9 @@ class CreateDetails < ActiveRecord::Migration
     create_table :details do |t|
     	t.string :text
     	t.integer :experience_id
-      t.timestamps null: false
+    	t.integer :order
+    	t.string :dtype
+      t.timestamps null: true
     end
   end
 end
